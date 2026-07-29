@@ -18,11 +18,14 @@
 
 ## Overview
 
-Official documentation repository for the paper, **"Smart Store System with User Profiling and Threat Detection Using Computer Vision"**（[Read the full paper](#) ← *add URL when published*)
+Official documentation repository for the project, **"Smart Store System with User Profiling and Threat Detection Using Computer Vision"**
 
 > **Sistema de Tienda Inteligente con Perfilamiento de Usuarios y Detección de Amenazas mediante Visión Artificial**
 > Lucas Mateo Rivadeneira Zarza, Jose Carlos Arroyo Cantero, Enoc David Samur Martínez, María Clareth Méndez Ramos, Melba Liliana Vertel Morinson
 > *34° Simposio Internacional de Estadística (SIE 2025) · Universidad Nacional de Colombia*
+
+>(2025). 34° Simposio Internacional de estadística 2025 : Inteligencia artificial. 
+[Online]: https://repositorio.unal.edu.co/handle/unal/89569
 
 Given the increasing insecurity in Latin America and the limited availability of technology in regions like Sucre, this project proposes a **smart store system based on computer vision** that combines real-time **user profiling** with **threat detection**. The system integrates three vision models — a **product detector**, a **firearm detector**, and an **emotion classifier** — with RFID-based identification hardware and a mobile application, to automate surveillance, streamline the checkout process, and characterize customer behavior. The research is applied, with a quantitative methodology, technological approach, explanatory scope, and non-experimental design, tested in a simulated store environment.
 
