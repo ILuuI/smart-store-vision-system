@@ -10,7 +10,7 @@
 
 **Universidad de Sucre · Sincelejo-Sucre, Colombia**
 
-[Paper](#citation) · [Quick Start](#quick-start) · [Results](#results) · [Architecture](#architecture)
+[Paper](#citation) · [Results](#results) · [Architecture](#architecture)
 
 </div>
 
@@ -153,36 +153,6 @@ flowchart LR
 ### Threat Detection (YOLOv8)
 
 Evaluated via confusion matrix on firearm vs. background classes, showing a high true-positive rate against a low number of false positives/negatives. *(Exact matrix values were not fully legible in the source PDF and are pending verification against training logs.)*
-
----
-
-## Quick Start
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/<your-username>/smart-store-vision-system.git
-cd smart-store-vision-system
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run product / threat detection
-
-```bash
-python src/detect.py --model yolov8 --source path/to/video --task products
-python src/detect.py --model yolov8 --source path/to/video --task weapons
-```
-
-### 4. Run emotion classification
-
-```bash
-python src/classify_emotion.py --weights path/to/checkpoint.h5
-```
 
 ---
 
