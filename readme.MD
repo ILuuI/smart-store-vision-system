@@ -18,13 +18,17 @@
 
 ## Overview
 
-Official documentation repository for the project, **"Smart Store System with User Profiling and Threat Detection Using Computer Vision"**
+Official documentation repository for the paper (originally published in Spanish):
 
 > **Sistema de Tienda Inteligente con Perfilamiento de Usuarios y Detección de Amenazas mediante Visión Artificial**
+>
 > Lucas Mateo Rivadeneira Zarza, Jose Carlos Arroyo Cantero, Enoc David Samur Martínez, María Clareth Méndez Ramos, Melba Liliana Vertel Morinson
-> *34° Simposio Internacional de Estadística (SIE 2025): Inteligencia Artificial · [Online]: https://repositorio.unal.edu.co/handle/unal/89569 · Universidad Nacional de Colombia*
+>
+> 34° Simposio Internacional de Estadística (SIE 2025) — [View publication ↗](https://repositorio.unal.edu.co/handle/unal/89569)
 
-Given the increasing insecurity in Latin America and the limited availability of technology in regions like Sucre, this project proposes a **smart store system based on computer vision** that combines real-time **user profiling** with **threat detection**. The system integrates three vision models — a **product detector**, a **firearm detector**, and an **emotion classifier** — with RFID-based identification hardware and a mobile application, to automate surveillance, streamline the checkout process, and characterize customer behavior. The research is applied, with a quantitative methodology, technological approach, explanatory scope, and non-experimental design, tested in a simulated store environment.
+*(English title: "Smart Store System with User Profiling and Threat Detection Using Computer Vision")*
+
+Given the increasing insecurity in Latin America and the limited availability of technology...
 
 ---
 
@@ -71,7 +75,7 @@ The system is built around three independent computer-vision pipelines feeding a
 - **Emotion classifier:** neural network (TensorFlow) trained on the six universal emotions, used to enrich the customer profile during the shopping experience.
 - **Identification & payment:** RFID RC522 sensor paired with an ESP32 microcontroller for user identification and payment processing.
 - **Persistence layer:** MongoDB, storing purchase history and detected emotions per user.
-- **Client:** mobile application, the user-facing interface for the shopping flow.
+- **Client (prototipe):** des application, the user-facing interface for the shopping flow.
 
 ```mermaid
 flowchart LR
@@ -136,34 +140,6 @@ Evaluated via confusion matrix on firearm vs. background classes, showing a high
 
 ---
 
-## Repository Structure
-
-```
-smart-store-vision-system/
-│
-├── README.md
-├── LICENSE                    # MIT License
-├── CITATION.cff
-├── requirements.txt
-├── docs/
-│   ├── architecture.md
-│   ├── dataset.md
-│   ├── results.md
-│   ├── methodology.md
-│   └── events.md
-├── src/
-├── notebooks/
-├── models/
-├── datasets/
-├── figures/
-├── results/
-├── scripts/
-├── tests/
-└── assets/
-```
-
----
-
 ## Quick Start
 
 ### 1. Clone the repository
@@ -192,12 +168,6 @@ python src/detect.py --model yolov8 --source path/to/video --task weapons
 python src/classify_emotion.py --weights path/to/checkpoint.h5
 ```
 
-### 5. Run in Google Colab
-
-Open the training notebook directly:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/) ← *(update with your notebook link)*
-
 ---
 
 ## Dataset
@@ -212,6 +182,10 @@ The system was trained on three independent datasets:
 
 > **Note:** minor discrepancies exist between the totals reported in the paper's text and its figures for the security dataset (25,000 vs. 25,515) — see [`docs/dataset.md`](docs/dataset.md) for details before citing exact figures.
 
+<p>
+    <img src="src\" width="500"/>
+</p>
+
 ---
 
 
@@ -222,7 +196,7 @@ This project has been presented at three academic milestones, each showing a dif
 | Event | Type | Reported Status | Key Novelties |
 |-------|------|------------------|----------------|
 | **RedCOLSI — Nodo Sucre** (Research-in-Progress Registration) | Registration form (Ingenierías area) | Early stage | First formal framing of the project: problem statement, general/specific objectives, and theoretical background defined. Core hardware selected (RFID RC522 for tag reading, ESP32 for processing/communication). Datasets for products, firearms, and facial expressions identified and under construction. No trained models or quantitative results yet. |
-| **34° Simposio Internacional de Estadística (SIE 2025)** — Universidad Nacional de Colombia, 29/07–01/08/2025 | Conference paper | Advanced stage | First release of trained models and full quantitative results: YOLOv8 for product detection (mAP@50 = 0.975), YOLOv8 for firearm detection (confusion-matrix evaluation), and a TensorFlow emotion classifier (84.67% accuracy). MongoDB backend and mobile app reported as functional, enabling purchase-history and emotion tracking per user. Dataset composition quantified (~25.5K security / ~28K store / 36K emotion images). |
+| **34° Simposio Internacional de Estadística (SIE 2025)** — Universidad Nacional de Colombia, 29/07–01/08/2025 | Conference paper | Advanced stage | First release of trained models and full quantitative results: YOLOv8 for product detection (mAP@50 = 0.975), YOLOv8 for firearm detection (confusion-matrix evaluation), and a TensorFlow emotion classifier (84.67% accuracy). MongoDB backend and prototipe of mobile app reported as functional, enabling purchase-history and emotion tracking per user. Dataset composition quantified (~25.5K security / ~28K store / 36K emotion images). |
 | **STEM-IA Miami (GEMMA)** | Conference paper (event-adapted format) | Same results as SIE 2025 | Same technical content and results as the SIE 2025 paper, reformatted for the STEM-IA Miami template: adds a dedicated "Purpose" section and more detailed institutional affiliation (research group name spelled out per author) not present in the SIE 2025 version. |
  
 
