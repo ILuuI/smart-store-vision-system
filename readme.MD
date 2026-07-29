@@ -22,10 +22,7 @@ Official documentation repository for the project, **"Smart Store System with Us
 
 > **Sistema de Tienda Inteligente con Perfilamiento de Usuarios y Detección de Amenazas mediante Visión Artificial**
 > Lucas Mateo Rivadeneira Zarza, Jose Carlos Arroyo Cantero, Enoc David Samur Martínez, María Clareth Méndez Ramos, Melba Liliana Vertel Morinson
-> *34° Simposio Internacional de Estadística (SIE 2025) · Universidad Nacional de Colombia*
-
->(2025). 34° Simposio Internacional de estadística 2025 : Inteligencia artificial. 
-[Online]: https://repositorio.unal.edu.co/handle/unal/89569
+> *34° Simposio Internacional de Estadística (SIE 2025): Inteligencia Artificial · [Online]: https://repositorio.unal.edu.co/handle/unal/89569 · Universidad Nacional de Colombia*
 
 Given the increasing insecurity in Latin America and the limited availability of technology in regions like Sucre, this project proposes a **smart store system based on computer vision** that combines real-time **user profiling** with **threat detection**. The system integrates three vision models — a **product detector**, a **firearm detector**, and an **emotion classifier** — with RFID-based identification hardware and a mobile application, to automate surveillance, streamline the checkout process, and characterize customer behavior. The research is applied, with a quantitative methodology, technological approach, explanatory scope, and non-experimental design, tested in a simulated store environment.
 
@@ -214,6 +211,20 @@ The system was trained on three independent datasets:
 | Emotions | 6-class emotion classification | 36,000 images |
 
 > **Note:** minor discrepancies exist between the totals reported in the paper's text and its figures for the security dataset (25,000 vs. 25,515) — see [`docs/dataset.md`](docs/dataset.md) for details before citing exact figures.
+
+---
+
+
+## Presentation History & Event Novelties
+ 
+This project has been presented at three academic milestones, each showing a different stage of development. The table below summarizes what was new at each one, based directly on the three source documents.
+ 
+| Event | Type | Reported Status | Key Novelties |
+|-------|------|------------------|----------------|
+| **RedCOLSI — Nodo Sucre** (Research-in-Progress Registration) | Registration form (Ingenierías area) | Early stage | First formal framing of the project: problem statement, general/specific objectives, and theoretical background defined. Core hardware selected (RFID RC522 for tag reading, ESP32 for processing/communication). Datasets for products, firearms, and facial expressions identified and under construction. No trained models or quantitative results yet. |
+| **34° Simposio Internacional de Estadística (SIE 2025)** — Universidad Nacional de Colombia, 29/07–01/08/2025 | Conference paper | Advanced stage | First release of trained models and full quantitative results: YOLOv8 for product detection (mAP@50 = 0.975), YOLOv8 for firearm detection (confusion-matrix evaluation), and a TensorFlow emotion classifier (84.67% accuracy). MongoDB backend and mobile app reported as functional, enabling purchase-history and emotion tracking per user. Dataset composition quantified (~25.5K security / ~28K store / 36K emotion images). |
+| **STEM-IA Miami (GEMMA)** | Conference paper (event-adapted format) | Same results as SIE 2025 | Same technical content and results as the SIE 2025 paper, reformatted for the STEM-IA Miami template: adds a dedicated "Purpose" section and more detailed institutional affiliation (research group name spelled out per author) not present in the SIE 2025 version. |
+ 
 
 ---
 
