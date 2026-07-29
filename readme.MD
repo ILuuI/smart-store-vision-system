@@ -28,7 +28,7 @@ Official documentation repository for the paper (originally published in Spanish
 
 *(English title: "Smart Store System with User Profiling and Threat Detection Using Computer Vision")*
 
-Given the increasing insecurity in Latin America and the limited availability of technology...
+Given the increasing insecurity in Latin America and the limited availability of technology in regions like Sucre, this project proposes a **smart store system based on computer vision** that combines real-time **user profiling** with **threat detection**. The system integrates three vision models — a **product detector**, a **firearm detector**, and an **emotion classifier** — with RFID-based identification hardware and a mobile application, to automate surveillance, streamline the checkout process, and characterize customer behavior. The research is applied, with a quantitative methodology, technological approach, explanatory scope, and non-experimental design, tested in a simulated store environment.
 
 ---
 
