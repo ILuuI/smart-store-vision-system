@@ -96,12 +96,18 @@ flowchart LR
 
 ### Product Detection (YOLOv8)
 
+<div align="center">
+
 | Metric | Value |
 |--------|-------|
 | **mAP@50** | **0.975** |
 | **mAP@50–95** | **0.910** |
 | Precision | 0.958 |
 | Recall | 0.959 |
+
+</div>
+
+<div align="center">
 
 | Class | Images | Instances | Precision | Recall | mAP@50 | mAP@50–95 |
 |-------|--------|-----------|-----------|--------|--------|-----------|
@@ -113,6 +119,8 @@ flowchart LR
 | Pringles | 400 | 1312 | 0.984 | 0.996 | 0.984 | 0.952 |
 | Water | 400 | 509 | 0.998 | 1.000 | 0.995 | 0.897 |
 | **Total** | **2800** | **4872** | **0.958** | **0.959** | **0.975** | **0.910** |
+
+</div>
 
 > The **Apple** class is the clear outlier (precision 0.806, recall 0.775), well below the rest of the classes (>0.94 across the board) — likely due to higher visual variability of unpackaged produce compared to packaged goods.
 
