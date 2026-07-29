@@ -98,17 +98,6 @@ flowchart LR
 
 <div align="center">
 
-| Metric | Value |
-|--------|-------|
-| **mAP@50** | **0.975** |
-| **mAP@50–95** | **0.910** |
-| Precision | 0.958 |
-| Recall | 0.959 |
-
-</div>
-
-<div align="center">
-
 | Class | Images | Instances | Precision | Recall | mAP@50 | mAP@50–95 |
 |-------|--------|-----------|-----------|--------|--------|-----------|
 | Apple | 400 | 1256 | 0.806 | 0.775 | 0.879 | 0.766 |
@@ -122,14 +111,22 @@ flowchart LR
 
 </div>
 
+<div align="center">
+
+| Metric | Value |
+|--------|-------|
+| **mAP@50** | **0.975** |
+| **mAP@50–95** | **0.910** |
+| Precision | 0.958 |
+| Recall | 0.959 |
+
+</div>
+
 > The **Apple** class is the clear outlier (precision 0.806, recall 0.775), well below the rest of the classes (>0.94 across the board) — likely due to higher visual variability of unpackaged produce compared to packaged goods.
 
 ### Emotion Classification
 
-| Metric | Value |
-|--------|-------|
-| **Accuracy** | **84.67%** |
-| Weighted F1-Score | 0.8468 |
+<div align="center">
 
 | Emotion | Precision | Recall | F1-Score | Support |
 |---------|-----------|--------|----------|---------|
@@ -139,6 +136,17 @@ flowchart LR
 | Happy | 0.5932 | 0.7740 | 0.6543 | 500 |
 | Sad | 0.8894 | 0.7560 | 0.8173 | 500 |
 | Surprise | 0.9051 | 0.7820 | 0.8391 | 500 |
+
+</div>
+
+<div align="center">
+
+| Metric | Value |
+|--------|-------|
+| **Accuracy** | **84.67%** |
+| Weighted F1-Score | 0.8468 |
+
+</div>
 
 > **Happy** has the lowest precision (0.5932) of all six classes despite being reported as the model's strongest emotion in the original paper — this claim should be double-checked before being restated elsewhere.
 
