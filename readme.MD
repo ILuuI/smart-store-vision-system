@@ -75,7 +75,7 @@ The system is built around three independent computer-vision pipelines feeding a
 - **Emotion classifier:** neural network (TensorFlow) trained on the six universal emotions, used to enrich the customer profile during the shopping experience.
 - **Identification & payment:** RFID RC522 sensor paired with an ESP32 microcontroller for user identification and payment processing.
 - **Persistence layer:** MongoDB, storing purchase history and detected emotions per user.
-- **Client (prototipe):** des application, the user-facing interface for the shopping flow.
+- **Client (prototype):** mobile application, the user-facing interface for the shopping flow.
 
 ```mermaid
 flowchart LR
@@ -95,6 +95,10 @@ flowchart LR
 ## Results
 
 ### Product Detection (YOLOv8)
+
+<div align="center">
+    <img src="docs/images/store_items.png" alt="Product detection metrics per class (YOLOv8)" width="650"/>
+</div>
 
 <div align="center">
 
@@ -125,6 +129,10 @@ flowchart LR
 > The **Apple** class is the clear outlier (precision 0.806, recall 0.775), well below the rest of the classes (>0.94 across the board) — likely due to higher visual variability of unpackaged produce compared to packaged goods.
 
 ### Emotion Classification
+
+<div align="center">
+    <img src="docs/images/emotion_classes.png" alt="Emotion classification report (precision, recall, F1-score)" width="550"/>
+</div>
 
 <div align="center">
 
@@ -162,29 +170,28 @@ The system was trained on three independent datasets:
 
 | Dataset | Purpose | Approx. size |
 |---------|---------|--------------|
-| Security (firearms) | Threat detection (YOLOv8) | ~25,000–25,515 images |
-| Store (products) | Product recognition (YOLOv8) | ~28,000 images (2,800 used for validation, 7 classes) |
+| Security (firearms) | Threat detection (YOLOv8) | ~25,515 images |
+| Store (products) | Product recognition (YOLOv8) | ~28,007 images (2,800 used for validation, 7 classes) |
 | Emotions | 6-class emotion classification | 36,000 images |
 
 > **Note:** minor discrepancies exist between the totals reported in the paper's text and its figures for the security dataset (25,000 vs. 25,515) — see [`docs/dataset.md`](docs/dataset.md) for details before citing exact figures.
 
-<p>
-    <img src="src\" width="500"/>
-</p>
+<div align="center">
+    <img src="docs/images/distribution_of_datasets.png" alt="Distribution of labeled images by category" width="500"/>
+    <p><em>Distribución de imágenes etiquetadas por categoría: Emociones (40.2% · 36,000), Tienda (31.3% · 28,007), Seguridad (28.5% · 25,515).</em></p>
+</div>
 
 ---
 
-
 ## Presentation History & Event Novelties
- 
+
 This project has been presented at three academic milestones, each showing a different stage of development. The table below summarizes what was new at each one, based directly on the three source documents.
- 
+
 | Event | Type | Reported Status | Key Novelties |
 |-------|------|------------------|----------------|
 | **RedCOLSI — Nodo Sucre** (Research-in-Progress Registration) | Registration form (Ingenierías area) | Early stage | First formal framing of the project: problem statement, general/specific objectives, and theoretical background defined. Core hardware selected (RFID RC522 for tag reading, ESP32 for processing/communication). Datasets for products, firearms, and facial expressions identified and under construction. No trained models or quantitative results yet. |
-| **34° Simposio Internacional de Estadística (SIE 2025)** — Universidad Nacional de Colombia, 29/07–01/08/2025 | Conference paper | Advanced stage | First release of trained models and full quantitative results: YOLOv8 for product detection (mAP@50 = 0.975), YOLOv8 for firearm detection (confusion-matrix evaluation), and a TensorFlow emotion classifier (84.67% accuracy). MongoDB backend and prototipe of mobile app reported as functional, enabling purchase-history and emotion tracking per user. Dataset composition quantified (~25.5K security / ~28K store / 36K emotion images). |
+| **34° Simposio Internacional de Estadística (SIE 2025)** — Universidad Nacional de Colombia, 29/07–01/08/2025 | Conference paper | Advanced stage | First release of trained models and full quantitative results: YOLOv8 for product detection (mAP@50 = 0.975), YOLOv8 for firearm detection (confusion-matrix evaluation), and a TensorFlow emotion classifier (84.67% accuracy). MongoDB backend and prototype of mobile app reported as functional, enabling purchase-history and emotion tracking per user. Dataset composition quantified (~25.5K security / ~28K store / 36K emotion images). |
 | **STEM-IA Miami (GEMMA)** | Conference paper (event-adapted format) | Same results as SIE 2025 | Same technical content and results as the SIE 2025 paper, reformatted for the STEM-IA Miami template: adds a dedicated "Purpose" section and more detailed institutional affiliation (research group name spelled out per author) not present in the SIE 2025 version. |
- 
 
 ---
 
