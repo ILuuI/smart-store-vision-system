@@ -37,13 +37,15 @@ Given the increasing insecurity in Latin America and the limited availability of
 
 ## Detected Classes
 
+<div align="center">
+
 ### Store products (YOLOv8)
 
 | Class | Product |
 |-------|---------|
 | 0 | Apple |
 | 1 | Pasta |
-| 2 | Corn Flour (Harina Pan) |
+| 2 | Flour|
 | 3 | Paper |
 | 4 | Coca-Cola |
 | 5 | Pringles |
@@ -67,6 +69,7 @@ Given the increasing insecurity in Latin America and the limited availability of
 | 4 | Sad |
 | 5 | Surprise |
 
+</div>
 ---
 
 ## Architecture
