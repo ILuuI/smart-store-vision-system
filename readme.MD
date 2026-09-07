@@ -1,4 +1,5 @@
 <div align="center">
+
 # Smart Store System with User Profiling and Threat Detection Using Computer Vision
 </div>
 
