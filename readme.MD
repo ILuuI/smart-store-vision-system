@@ -102,21 +102,6 @@ flowchart LR
 
 <div align="center">
 
-| Class | Images | Instances | Precision | Recall | mAP@50 | mAP@50–95 |
-|-------|--------|-----------|-----------|--------|--------|-----------|
-| Apple | 400 | 1256 | 0.806 | 0.775 | 0.879 | 0.766 |
-| Pasta | 400 | 400 | 0.994 | 0.994 | 0.994 | 0.955 |
-| Corn Flour | 400 | 400 | 0.993 | 0.998 | 0.995 | 0.991 |
-| Paper | 400 | 400 | 0.985 | 0.995 | 0.991 | 0.983 |
-| Coca-Cola | 400 | 595 | 0.947 | 0.953 | 0.978 | 0.829 |
-| Pringles | 400 | 1312 | 0.984 | 0.996 | 0.984 | 0.952 |
-| Water | 400 | 509 | 0.998 | 1.000 | 0.995 | 0.897 |
-| **Total** | **2800** | **4872** | **0.958** | **0.959** | **0.975** | **0.910** |
-
-</div>
-
-<div align="center">
-
 | Metric | Value |
 |--------|-------|
 | **mAP@50** | **0.975** |
@@ -132,19 +117,6 @@ flowchart LR
 
 <div align="center">
     <img src="src/images/emotion_classes.png" alt="Emotion classification report (precision, recall, F1-score)" width="550"/>
-</div>
-
-<div align="center">
-
-| Emotion | Precision | Recall | F1-Score | Support |
-|---------|-----------|--------|----------|---------|
-| Angry | 0.7660 | 0.9820 | 0.8606 | 500 |
-| Disgust | 0.9123 | 0.8740 | 0.8927 | 500 |
-| Fear | 0.7391 | 0.9120 | 0.8165 | 500 |
-| Happy | 0.5932 | 0.7740 | 0.6543 | 500 |
-| Sad | 0.8894 | 0.7560 | 0.8173 | 500 |
-| Surprise | 0.9051 | 0.7820 | 0.8391 | 500 |
-
 </div>
 
 <div align="center">
