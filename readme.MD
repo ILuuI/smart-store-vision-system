@@ -1,4 +1,6 @@
+<div align="center">
 # Smart Store System with User Profiling and Threat Detection Using Computer Vision
+</div>
 
 <div align="center">
 
@@ -22,7 +24,7 @@ Official documentation repository for the paper (originally published in Spanish
 
 > **Sistema de Tienda Inteligente con Perfilamiento de Usuarios y Detección de Amenazas mediante Visión Artificial**
 >
-> Lucas Mateo Rivadeneira Zarza, Jose Carlos Arroyo Cantero, Enoc David Samur Martínez, María Clareth Méndez Ramos, Melba Liliana Vertel Morinson
+> Jose Carlos Arroyo Cantero, María Clareth Méndez Ramos, Lucas Mateo Rivadeneira Zarza, Enoc David Samur Martínez, Melba Liliana Vertel Morinson
 >
 > 34° Simposio Internacional de Estadística (SIE 2025) — [View publication ↗](https://repositorio.unal.edu.co/handle/unal/89569)
 
@@ -117,15 +119,6 @@ flowchart LR
 
 <div align="center">
     <img src="src/images/emotion_classes.png" alt="Emotion classification report (precision, recall, F1-score)" width="550"/>
-</div>
-
-<div align="center">
-
-| Metric | Value |
-|--------|-------|
-| **Accuracy** | **84.67%** |
-| Weighted F1-Score | 0.8468 |
-
 </div>
 
 > **Happy** has the lowest precision (0.5932) of all six classes despite being reported as the model's strongest emotion in the original paper — this claim should be double-checked before being restated elsewhere.
