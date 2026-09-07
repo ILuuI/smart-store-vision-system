@@ -97,7 +97,7 @@ flowchart LR
 ### Product Detection (YOLOv8)
 
 <div align="center">
-    <img src="docs/images/store_items.png" alt="Product detection metrics per class (YOLOv8)" width="650"/>
+    <img src="src/images/store_items.png" alt="Product detection metrics per class (YOLOv8)" width="650"/>
 </div>
 
 <div align="center">
@@ -131,7 +131,7 @@ flowchart LR
 ### Emotion Classification
 
 <div align="center">
-    <img src="docs/images/emotion_classes.png" alt="Emotion classification report (precision, recall, F1-score)" width="550"/>
+    <img src="src/images/emotion_classes.png" alt="Emotion classification report (precision, recall, F1-score)" width="550"/>
 </div>
 
 <div align="center">
@@ -174,10 +174,10 @@ The system was trained on three independent datasets:
 | Store (products) | Product recognition (YOLOv8) | ~28,007 images (2,800 used for validation, 7 classes) |
 | Emotions | 6-class emotion classification | 36,000 images |
 
-> **Note:** minor discrepancies exist between the totals reported in the paper's text and its figures for the security dataset (25,000 vs. 25,515) — see [`docs/dataset.md`](docs/dataset.md) for details before citing exact figures.
+> **Note:** minor discrepancies exist between the totals reported in the paper's text and its figures for the security dataset (25,000 vs. 25,515) — see [`src/dataset.md`](src/dataset.md) for details before citing exact figures.
 
 <div align="center">
-    <img src="docs/images/distribution_of_datasets.png" alt="Distribution of labeled images by category" width="500"/>
+    <img src="src/images/distribution_of_datasets.png" alt="Distribution of labeled images by category" width="500"/>
     <p><em>Distribución de imágenes etiquetadas por categoría: Emociones (40.2% · 36,000), Tienda (31.3% · 28,007), Seguridad (28.5% · 25,515).</em></p>
 </div>
 
