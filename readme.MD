@@ -153,6 +153,8 @@ The system was trained on three independent datasets:
     <p><em>Distribución de imágenes etiquetadas por categoría: Emociones (40.2% · 36,000), Tienda (31.3% · 28,007), Seguridad (28.5% · 25,515).</em></p>
 </div>
 
+Drink link to the exact dataset created and used: https://huggingface.co/datasets/SilentTorment/smart-store-vision-system
+
 ---
 
 ## Presentation History & Event Novelties
